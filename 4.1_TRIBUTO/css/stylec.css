@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/backgroundceara.jpg');
+    background-size: cover;
+    height: 100vh;  
+}
+
+.title {
+    color: white;
+    text-align: center;
+ 
+}
+
+.black-link {
+    color: white;
+    margin-top: 50px;
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.center-paragraph {
+    color: white;
+    flex: 1;
+    font-size: 50px;
+    margin-left: 170px;
+}
+
+.left-paragraph {
+    color: white;
+    flex: 1;
+    font-size: 50px;
+    margin-left: 170px;
+}
+
+.right-paragraph {
+    color: white;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 130px;
+}
+
+.text-history {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-left: 10px;
+    border: 2px solid rgb(153, 0, 255);
+    width: 500px;
+    height: 280px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.title-shield {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.evolution-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

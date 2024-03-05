@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/backgroundindex.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+   
+}
+
+.header {
+    text-align: center;
+    font-size: 25px;
+    color: #ffff
+}
+
+.shield figure {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.shield figure:last-child {
+    margin-right: 0;
+}
+
+.shield img{
+    width: 300px;
+    height: auto;
+}
+
