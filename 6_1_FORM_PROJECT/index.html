@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Casa, Meu Lar.</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Minha Casa, Meu Lar.</h3>
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Formulário</p>
+        </div>
+        <div class="form-body">
+          <h1 class="form-title">O sonho da casa própria está aqui!</h1>
+          <p>Descreva as características e marque os opcionais você deseja</p>
+          <form>
+            <div class="box-input">
+              <label for="title"
+                >Membros da familia <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Quem irá residir na sua casa. Ex: Cônjuge, filhos, pets."
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="price"
+                >Renda familiar <span class="required-field">*</span></label
+              >
+              <input
+                type="number"
+                name="price"
+                id="price"
+                class="block"
+                placeholder="Renda total familiar"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="description"
+                >Descrição familiar <span class="required-field">*</span></label
+              >
+              <textarea
+                name="description"
+                id="description"
+                class="block"
+                placeholder="Escreva como você imagina sua casa, quais e quantos cômodos teria e etc."
+              ></textarea>
+            </div>
+            <div class="box-input">
+              <p>
+                Escolha entre casa ou apartamento:
+                <span class="required-field">*</span>
+              </p>
+              <input type="radio" name="home" id="house" />
+              <label for="house">Casa</label><br /><br />
+              <input type="radio" name="home" id="apartment" />
+              <label for="apartment">Apartamento</label>
+            </div>
+            <div class="box-input">
+              <p>
+                Janela com grade?
+                <span class="required-field">*</span>
+              </p>
+              <input type="radio" name="home" id="gridy" />
+              <label for="gridy">Sim</label><br /><br />
+              <input type="radio" name="home" id="gridn" />
+              <label for="gridn">Não</label>
+            </div>
+            <div class="box-input">
+              <p>
+                Escolha o tipo de janela:
+                <span class="required-field">*</span>
+              </p>
+              <input type="radio" name="home" id="sink1" />
+              <label for="sink1">Madeira</label><br /><br />
+              <input type="radio" name="home" id="sink2" />
+              <label for="sink2">Alumínio</label>
+            </div>
+            <div class="box-input">
+              <p>
+                Escolha o tipo de pia da lavanderia e cozinha:
+                <span class="required-field">*</span>
+              </p>
+              <input type="radio" name="home" id="sink1" />
+              <label for="sink1">Marmore</label><br /><br />
+              <input type="radio" name="home" id="sink2" />
+              <label for="sink2">Inox</label><br /><br />
+              <input type="radio" name="home" id="sink3" />
+              <label for="sink3">Louça</label>
+            </div>
+
+            <div class="optional-box">
+              <p>Opcionais</p>
+              <ul class="optional-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="coving"
+                    name="optional[]"
+                    value="coving"
+                  />
+                  <label for="coving">Rodateto</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="alarm"
+                    name="optional[]"
+                    value="alarm"
+                  />
+                  <label for="alarm">Alarme</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ac" name="optional[]" value="ac" />
+                  <label for="ac">Ar Condicionado</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="workbench"
+                    name="optional[]"
+                    value="workbench"
+                  />
+                  <label for="workbench">Bancada de Mármore Cozinha</label>
+                </li>
+              </ul>
+            </div>
+            <div class="optional-box">
+              <ul class="optional-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="eletronic_lock"
+                    name="optional[]"
+                    value="eletronic_lock"
+                  />
+                  <label for="eletronic_lock">Fechadura Eletronica</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="curtain"
+                    name="optional[]"
+                    value="curtain"
+                  />
+                  <label for="curtain">Cortina</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ac" name="optional[]" value="ac" />
+                  <label for="ac">Ducha Higienica</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="cleanshower"
+                    name="optional[]"
+                    value="cleanshower"
+                  />
+                  <label for="alexa">Integração com Alexa</label>
+                </li>
+              </ul>
+            </div>
+            <div class="box-input">
+              <p>
+                Foto frente e verso da identidade:
+                <span class="required-field"></span>
+              </p>
+              <input
+                type="file"
+                multiple
+                accept="image/png, image/jpg"
+                id="images"
+                name="images"
+                required
+              />
+            </div>
+            <input type="submit" value="Enviar" class="btn-submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
